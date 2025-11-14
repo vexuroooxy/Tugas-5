@@ -184,6 +184,14 @@ nav {
     flex-direction: column;
     gap: 25px;
   }
+
+  .prodi-item {
+    gap: 50px;
+  }
+
+  .ukm-item {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile Phone */
@@ -198,28 +206,22 @@ nav {
     padding-bottom: 20px;
   }
 
-  .follow-us {
-    display: none;
-  }
-
-  .follow-us-mobile {
-    background-color: orangered;
-    padding: 10px;
-    border-radius: 20px;
-    display: block;
-  }
-
   .hero {
     flex-direction: column;
     padding: 20px;
   }
 
-  .logo-home {
-    display: none;
-  }
-
   .prodi {
     margin-top: 30px;
+  }
+
+  .prodi-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ukm-item {
+    grid-template-columns: 2fr;
   }
 
   .all-logo {
