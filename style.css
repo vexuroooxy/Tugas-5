@@ -109,6 +109,21 @@ nav {
   margin-bottom: 20px;
 }
 
+.prodi-item {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  font-weight: bolder;
+}
+
+.prodi-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
 /* UKM Section */
 .ukm {
   text-align: center;
@@ -123,14 +138,6 @@ nav {
   margin-bottom: 20px;
 }
 
-.prodi-item {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-  font-weight: bolder;
-}
-
 .ukm-item {
   margin-top: 30px;
   display: grid;
@@ -141,6 +148,14 @@ nav {
   font-weight: bolder;
 }
 
+.ukm-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Prodi dan UKM Box */
 .prodi-card,
 .ukm-card {
   border: 1px solid #ddd;
@@ -152,17 +167,12 @@ nav {
   transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
 }
 
-.ukm-card img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
 /* Footer Section */
 .footer {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Media Queries */
@@ -171,6 +181,10 @@ nav {
 @media (max-width: 1366px) {
   html {
     font-size: 75%;
+  }
+
+  .prodi-item {
+    gap: 50px;
   }
 }
 
@@ -186,11 +200,21 @@ nav {
   }
 
   .prodi-item {
-    gap: 50px;
+    gap: 25px;
   }
 
   .ukm-item {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prodi-card,
+  .ukm-card {
+    padding: 15px;
+  }
+
+  .ukm-card img {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -199,6 +223,7 @@ nav {
   html {
     font-size: 55%;
   }
+
   nav {
     flex-direction: column;
     gap: 25px;
@@ -211,17 +236,38 @@ nav {
     padding: 20px;
   }
 
+  .logo-home {
+    display: none;
+  }
+
   .prodi {
     margin-top: 30px;
   }
 
   .prodi-item {
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12.5px;
   }
 
   .ukm-item {
-    grid-template-columns: 2fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .prodi-card,
+  .ukm-card {
+    padding: 15px;
+  }
+
+  .ukm-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .prodi-card img {
+    width: 100px;
+    height: 100px;
   }
 
   .all-logo {
